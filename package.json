@@ -1,0 +1,23 @@
+{
+  "name": "marko-jest-require-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.4.4"
+  },
+  "dependencies": {
+    "marko": "^4.9.7"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "transform": {
+      "^.+\\.marko$": "<rootDir>/jest-marko.js"
+    },
+    "testMatch": [
+      "**/*.test.[jt]s"
+    ],
+    "cache" : false
+  }
+}
